@@ -1,6 +1,6 @@
 # Linode Setup
 
-#Adapted from [Feross](https://feross.org/how-to-setup-your-linode/)
+# Adapted from [Feross](https://feross.org/how-to-setup-your-linode/)
 
 
 ### Overview
@@ -11,10 +11,10 @@
 5. System stability and features
 6. Backups and automation
 7. Install custom software
---------------------------------
+---
 ### Assumptions
 - OS: Ubuntu 16.04 LTS
---------------------------------
+---
 ### 1. OS Setup
 - Set hostname
 - FQDN
