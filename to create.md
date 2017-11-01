@@ -3,7 +3,10 @@ Git server
 Django server
 VMWare Backups
 PostgreSQL server
-Django Project Setup
+Django Project/app Setup
 Firewall Setup
 Production Django Setup
-  App, Static (web), SQL
+  App, Static (web), SQL, settings files
+Deploy via Git
+- [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-automatic-deployment-with-git-with-a-vps)
+- [Sitepoint](https://www.sitepoint.com/deploying-from-github-to-a-server/)
