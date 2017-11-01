@@ -8,3 +8,4 @@ Storing my personal guides for setting up projects, servers, etc.
 * [Remove Sensitive Data from Repository](files/remove_sens_data_github_hist.md)
 * [Deploy Django App on Linode](files/deploy_django.linode.md)
 * [SSH Keys](files/ssh_keys.md)
+* [Linux Firewall Using ufw](files/ufw.md)
