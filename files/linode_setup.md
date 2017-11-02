@@ -11,12 +11,13 @@
 5. System stability and features
 6. Backups and automation
 7. Install custom software
----
+
 ### Assumptions
 - OS: Ubuntu 16.04 LTS
----
+
 ### 1. OS Setup
-- [Set hostname](#sethostname)
+- Deploy Ubuntu 16.04 LTS
+- [Set hostname](#sethostname)ToWncEnTORMI
 - FQDN
 - Set the time
 - Set non-root user
@@ -65,9 +66,9 @@
 #### <a name="sethostname"></a> Set hostname
 As the root user, use `hostname` to check the current hostname value.
 
-The hostname is stored in `/etc/hostname`. Either edit this file using `nano` or
-execute `echo "hostname" > /etc/hostname`. In order to force the new hostname to the system, execute
-`hostname -F /etc/hostname`.
+The hostname is stored in `/etc/hostname`.
+Run:
+`hostnamectl set-hostname example_hostname`
 
 
 [ufw]: ufw.md
