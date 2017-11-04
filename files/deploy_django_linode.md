@@ -1,12 +1,12 @@
-[uWSGI](https://www.linode.com/docs/security/backups/backing-up-your-data)
-[Linode](https://www.linode.com/docs/web-servers/nginx/deploy-django-applications-using-uwsgi-and-nginx-on-ubuntu-14-04)
-[Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-16-04)
+[uWSGI](https://www.linode.com/docs/security/backups/backing-up-your-data)  
+[Linode](https://www.linode.com/docs/web-servers/nginx/deploy-django-applications-using-uwsgi-and-nginx-on-ubuntu-14-04)  
+[Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-serve-django-applications-with-uwsgi-and-nginx-on-ubuntu-16-04)  
 
 ## Deploy with nginx and uwsgi
-[Monica Lent](http://monicalent.com/blog/2013/12/06/set-up-nginx-and-uwsgi/)
-[uwsgi-docs](http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)
-[stop uwsgi in emperor mode](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)
-[Django docs uwsgi](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)
+[Monica Lent](http://monicalent.com/blog/2013/12/06/set-up-nginx-and-uwsgi/)  
+[uwsgi-docs](http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html)  
+[stop uwsgi in emperor mode](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)  
+[Django docs uwsgi](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)  
 
 #### Scenario
 For the following files, my environment did not use virtualenvwrapper and my project file path was as follows:
