@@ -76,3 +76,5 @@ socket		= /var/uwsgi/lnkto.sock # used for emperor mode
 chmod-socket    = 666
 vacuum          = true # clear environment on exit
 ```
+newline
+newline
