@@ -9,3 +9,6 @@ Storing my personal guides for setting up projects, servers, etc.
 * [Deploy Django App on Linode](files/deploy_django.linode.md)
 * [SSH Keys](files/ssh_keys.md)
 * [Linux Firewall Using ufw](files/ufw.md)
+* [Git Workflow](files/git_workflow.md)
+
+### [Links](files/links.md)
