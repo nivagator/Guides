@@ -11,4 +11,4 @@ Storing my personal guides for setting up projects, servers, etc.
 * [Linux Firewall Using ufw](files/ufw.md)
 * [Git Workflow](files/git_workflow.md)
 
-### [Links](files/links.md)
+### [Links](files/links_file.md)
