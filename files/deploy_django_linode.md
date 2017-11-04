@@ -11,13 +11,13 @@
 #### Scenario
 For the following files, my environment did not use virtualenvwrapper and my project file path was as follows:
 
-app location:   `/home/[user]/[virtualenv]/src/manage.py`
+app location:   `/home/[user]/[virtualenv]/src/manage.py`  
 wsgi file:      `/home/[user]/[virtualenv]/src/[app]/wsgi.py`
-media:          `/home/[user]/[virtualenv]/media`
-static:         `/home/[user]/[virtualenv]/src/static-serve`
-virtualenv home `/home/[user]/[virtualenv]`
+media:          `/home/[user]/[virtualenv]/media`  
+static:         `/home/[user]/[virtualenv]/src/static-serve`  
+virtualenv home `/home/[user]/[virtualenv]`  
 
-permissions are key
+permissions are key  
 emperor mode runs as the www-data user, set permissions accordingly
 
 #### unix socket file
@@ -76,5 +76,5 @@ socket		= /var/uwsgi/lnkto.sock # used for emperor mode
 chmod-socket    = 666
 vacuum          = true # clear environment on exit
 ```
-newline
+newline  
 newline
