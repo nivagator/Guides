@@ -15,6 +15,7 @@ app location:   `/home/[user]/[virtualenv]/src/manage.py`
 wsgi file:      `/home/[user]/[virtualenv]/src/[app]/wsgi.py`
 media:          `/home/[user]/[virtualenv]/media`
 static:         `/home/[user]/[virtualenv]/src/static-serve`
+virtualenv home `/home/[user]/[virtualenv]`
 
 permissions are key
 emperor mode runs as the www-data user, set permissions accordingly
