@@ -10,5 +10,6 @@ Storing my personal guides for setting up projects, servers, etc.
 * [SSH Keys](files/ssh_keys.md)
 * [Linux Firewall Using ufw](files/ufw.md)
 * [Git Workflow](files/git_workflow.md)
+* [Deploy your site from GitHub](files/auto-deploy.github.md)
 
 ### [Links](files/links_file.md)
