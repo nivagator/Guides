@@ -17,7 +17,7 @@
 
 ### 1. OS Setup
 - Deploy Ubuntu 16.04 LTS
-- [Set hostname](#sethostname)ToWncEnTORMI
+- [Set hostname](#sethostname)
 - FQDN
 - Set the time
 - Set non-root user
