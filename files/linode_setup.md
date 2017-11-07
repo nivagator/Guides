@@ -1,6 +1,6 @@
 # Linode Setup
 
-# Adapted from [Feross][5]
+#### Adapted from [Feross][5]
 
 
 ### Overview
