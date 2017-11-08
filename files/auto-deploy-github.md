@@ -23,7 +23,7 @@ README.md
 ```
 
 Use rsync to merge the html destination  
-`rsync -avz --exclude-from '/path/to/html/exclude-list.txt' /path/to/gittemp/[repo name]/ /path/to/html`
+`rsync -avz --exclude-from '/path/to/html/exclude-list.txt' /path/to/gittemp/[repo name]/ /path/to/html/`
 
 rsync will recursively merge-copy files to the html folder while excluding the non-production files and directories in the exclude-list.txt file.
 
