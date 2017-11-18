@@ -8,6 +8,25 @@
 [stop uwsgi in emperor mode](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)  
 [Django docs uwsgi](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)  
 
+1. Import site files.
+  - git/ftp
+
+  
+#### create virtualenv
+#### pip install from requirements.txt
+
+
+2. Create media and static directories
+3. Edit settings.py to set `STATIC_ROOT = os.path.join(BASE_DIR, "static/")` and run `python manage.py collectstatic`
+4. Create socket file at `/var/uwsgi/[app].sock` and update permissions/owner
+  - `sudo chown www-data /var/uwsgi/[app].sock`
+  - `sudo chmod og+rw /var/uwsgi/[app].sock`
+5. Create `nginx.conf` file and add file link to `/etc/nginx/sites-enabled`
+  - `sudo ln -s /home/[user]/[virtualenv]/[app]_nginx.conf /etc/nginx/sites-enabled`
+6. Create `uwsgi.ini` file and add file link to  `/etc/uwsgi/vassals`
+  - `sudo ln -s /home/[user]/[virtualenv]/[app]_uwsgi.ini /etc/uwsgi/vassals`
+8. Restart Nginx with `sudo service nginx restart`
+
 #### Scenario
 For the following files, my environment did not use virtualenvwrapper and my project file path was as follows:
 

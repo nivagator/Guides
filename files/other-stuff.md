@@ -1,5 +1,6 @@
 # Other Random Stuff
-
+- check virtualenvwrapper home path
+  - `echo $VIRTUAL_ENV`
 - screenfetch
 ```
 gavin@dev01:~/$ screenfetch
