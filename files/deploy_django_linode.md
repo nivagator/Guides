@@ -12,8 +12,8 @@
 [Django docs uwsgi](http://lists.unbit.it/pipermail/uwsgi/2012-February/003560.html)  
 
 1. Import site files
-  - Destination: `/home/[user]/[project]/src`
-  - [git](auto-deploy-github.md)/ftp
+   - Destination: `/home/[user]/[project]/src`
+   - [git](auto-deploy-github.md)/ftp
 2. Create virtualenv
   - using virtualenvwrapper, `mkvirtualenv [project]`
   - create and load using requirements file using `mkvirtualenv -r /path/to/project/requirements.txt [project]`
