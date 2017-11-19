@@ -15,28 +15,28 @@
    - Destination: `/home/[user]/[project]/src`
    - [git](auto-deploy-github.md)/ftp
 2. Create virtualenv
-  - using virtualenvwrapper, `mkvirtualenv [project]`
-  - create and load using requirements file using `mkvirtualenv -r /path/to/project/requirements.txt [project]`
-  - force python3 if necessary `mkvirtualenv --python=/usr/bin/python3 -r /home/[user]/[project]/src/[app]/requirements.txt [project]`
+   - using virtualenvwrapper, `mkvirtualenv [project]`
+   - create and load using requirements file using `mkvirtualenv -r /path/to/project/requirements.txt [project]`
+   - force python3 if necessary `mkvirtualenv --python=/usr/bin/python3 -r /home/[user]/[project]/src/[app]/requirements.txt [project]`
 3. pip install from requirements.txt
-  - this can be done as part of the virtualenv deployment or manually after
-  - be careful to install through the correct python pip version
-  - Make sure you have uWSGI installed `pip install uwsgi`
+   - this can be done as part of the virtualenv deployment or manually after
+   - be careful to install through the correct python pip version
+   - Make sure you have uWSGI installed `pip install uwsgi`
 4. Create media and static directories
-  - Option 1: part of the project folder at `/home/[user]/[project]/`
-  - Option 2: part of the typical webserver deployment at `/var/www/[project]`
-  - Option 3: as part of a CDN like AWS S3 (need content)
+   - Option 1: part of the project folder at `/home/[user]/[project]/`
+   - Option 2: part of the typical webserver deployment at `/var/www/[project]`
+   - Option 3: as part of a CDN like AWS S3 (need content)
 5. Edit settings.py to set `STATIC_ROOT = os.path.join(BASE_DIR, "static/")` and run `python manage.py collectstatic`
-  - You can also use an explicit file path: `/var/www/example.com/static/` or `/home/[user]/[project]/static`
+   - You can also use an explicit file path: `/var/www/example.com/static/` or `/home/[user]/[project]/static`
 6. Create socket file at `/var/uwsgi/[app].sock` and update permissions/owner
-  - `sudo chown www-data /var/uwsgi/[app].sock`
-  - `sudo chmod og+rw /var/uwsgi/[app].sock`
+   - `sudo chown www-data /var/uwsgi/[app].sock`
+   - `sudo chmod og+rw /var/uwsgi/[app].sock`
 7. If not already created, make a uwsgi directory at `/var/log/` and update permissions
-  - `sudo chmod og+rw /var/log/uwsgi`
+   - `sudo chmod og+rw /var/log/uwsgi`
 7. Create `nginx.conf` file and add file link to `/etc/nginx/sites-enabled`
-  - `sudo ln -s /home/[user]/[project]/[app]_nginx.conf /etc/nginx/sites-enabled`
+   - `sudo ln -s /home/[user]/[project]/[app]_nginx.conf /etc/nginx/sites-enabled`
 8. Create `uwsgi.ini` file and add file link to  `/etc/uwsgi/vassals`
-  - `sudo ln -s /home/[user]/[project]/[app]_uwsgi.ini /etc/uwsgi/vassals`
+   - `sudo ln -s /home/[user]/[project]/[app]_uwsgi.ini /etc/uwsgi/vassals`
 9. Restart Nginx with `sudo service nginx restart`
 10. Reload uwsgi pid file `uwsgi --reload /tmp/[app].pid`
 
