@@ -11,7 +11,7 @@ There are specific steps you must follow within the Synology control panel. See 
 this is simple in my case, mainly because its done through a GUI interface using a step by step detailed guide. [Digital Ocean](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-16-04) has a guide for serving files from one Linux server to another.
 
 #### Set up Client
-This command will mount the NFS drive to the specified mount point.
+This command will mount the NFS drive to the specified mount point.  
 `sudo mount [host ip]:/path/to/share /local/mount/point`  
 
 Running the disk free command,`df`, will show all file systems. If the mount was successful, it will be listed here.  
