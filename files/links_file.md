@@ -6,3 +6,4 @@
 - [Daring Fireball(Markdown)](https://daringfireball.net/projects/markdown/)  
 - [Front-End Checklist](http://frontendchecklist.com/)
 - [Customize Django Admin](https://brobin.me/blog/2015/03/customizing-the-django-admin/)
+- [Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
