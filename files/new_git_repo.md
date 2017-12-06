@@ -14,7 +14,7 @@ Open Git Bash in the project directory
 `git add .`  
 `git commit -m "first commit"`  
 `git remote add origin [remote repository URL]`  
-`git remove -v`  
+`git remote -v`  
 `git push origin master`  
 
 
