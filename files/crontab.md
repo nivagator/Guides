@@ -9,3 +9,6 @@ I think files with extensions are ignored.
 run:  
 `run-parts --test /etc/cron.daily`  
 If you don't see your scripts listed, remove the .sh extensions and try again.
+
+#### Links
+[nixCraft - Cron](https://www.cyberciti.biz/faq/howto-check-cronjob-is-running-not/)
