@@ -18,6 +18,7 @@ Repeat steps 2 through 4 for each commit to GitHub
 3. `git commit -m "commit message"` use -m to add a comment to each commit
 4. `git push <remote name> <name of branch to push>` i.e., `git push origin master`
 
+
 #### Option 2
 Create new repo on Github but do not initialize with README  
 Open Git Bash in the project directory  
@@ -27,3 +28,28 @@ Open Git Bash in the project directory
 `git remote add origin [remote repository URL]`  
 `git remote -v`  
 `git push -u origin master`  
+
+
+#### Single flow
+If cloning the repo start with:  
+```bash
+$ git clone <github repo url> <target>
+$ cd <target>
+$ rm -rf .git
+```
+Once you've got a clean directory:
+```bash
+$ git init
+$ git add .
+$ git commit
+```
+Go and create setup a project at GitHub. If its a new repo and not a clone, do not initialize with README.md and:
+```bash
+$ echo "Project Name" > README.md
+```
+then:
+```bash
+$ git remote add origin <new repo address>
+$ git remote -v
+$ git push -u origin master
+```
