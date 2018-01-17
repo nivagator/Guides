@@ -9,6 +9,7 @@
 - [Bash Scripting Tutorial](https://ryanstutorials.net/bash-scripting-tutorial/)
 - [DJANGO APPS BUILDOUT](https://jacobian.org/writing/django-apps-with-buildout/)
 - [Static websites infographic](http://nilclass.com/courses/what-is-a-static-website/#1)
+- [MD code languages](http://www.rubycoloredglasses.com/2013/04/languages-supported-by-github-flavored-markdown/)
 
 ### jekyll
 - [switch theme in an existing jekyll sire](https://stackoverflow.com/questions/31327045/switch-theme-in-an-existing-jekyll-installation)
