@@ -29,3 +29,11 @@ An operational leader is someone who sees how the individual elements of an orga
 - Focuses on Quality
 - Effective at Supply Chain management
 - Do not manage; they lead
+
+
+#### skills i want to flesh out and represent in my resume
+- Stratigic Thinking
+- Innovation and Creativity
+- Risk Management
+- Results Orientation
+- Coaching and Mentoring
