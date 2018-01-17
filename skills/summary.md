@@ -4,7 +4,7 @@
   - in every position I've held, I've been relied on to provide analytical insight to drive changes in business process or to derive new insight out of existing data 
 - I connect the dots between technical concepts and business process ensuring uniform expectations across departments and levels.
   - i have the ability to communicate using the technical terms and jargon and then translate those concepts in a way that business leadership can clearly understand and vice versa. This has proven to be a valuable skill that often avoids miscommunication and incorrectly aligned goals and expectations. 
-- I inspire teams to thrive, building trust and accountability by focusing on purpose, embracing differences and setting clear expectations.
+- I inspire teams to thrive, building trust and accountability by focusing on purpose and setting clear expectations.
   - as a leader, I have the ability to influence the level of engagement of my team and those around me. By maintaining a clear vision of the larger purpose of the work at hand, we can push through the menial tasks with the same drive as we tackle and overcome the massive challenges.
 - I devise creative solutions to complex business challenges with finite resources through strategic organization and innovation. 
   - at every stop along my journey, there have always been limited resources (time, technology, team members, regulations). I've found ways to apply those few resources in creative ways to accomplish far more than was expected. (SSIS, falcon website, excel apps)
