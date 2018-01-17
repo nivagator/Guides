@@ -11,7 +11,7 @@
 - I pour into those around me with a genuine passion to see them realize their potential and achieve success.
 - I manage through complexity; I lead through change.
 
-#### Experience
+### Experience
  
 **Wells Fargo – Irving, Texas**  
 **Analytic Manager**  									 	   
@@ -48,17 +48,17 @@ Team Development
 - Implemented revenue recognition process, purchase order system accurately providing deferred revenue data for financial planning and budgeting. 
 - Created automated attendance tracking system in live class environments. Data provided real time feedback to leaders on instructor and course material effectiveness.  
 
-#### Areas of expertise
+### Areas of expertise
  
 Operational Leadership, Analytics, Information Technology Management, Process Improvement, Data Design  
 
 SQL, SSRS, SSIS, Excel, HTML, CSS, Jekyll, VBA, Liquid, Python, Django, Linux and Linux Server, Markdown
 
-#### Education
+### Education
 Bachelor of Science in Economics  
 University of North Texas, Denton, Texas  
 May 2009
 
-#### Honors/Awards
+### Honors/Awards
 Q4 2017 - Consumer Lending Team Excellence Award winner  
 2016 - Gallup Team Member Engagement Survey - top 5% of manager scores across all of Wells Fargo.	       
