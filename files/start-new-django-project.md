@@ -18,6 +18,9 @@
 - add host IP address to the `ALLOWED_HOSTS`
 - add custom database solution if required
 
+5. Make migrations
+`python manage.py makemigrations`
+
 5. Create superuser
 `python manage.py createsuperuser`
 
