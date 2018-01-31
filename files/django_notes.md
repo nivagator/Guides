@@ -50,3 +50,26 @@ urlpatterns = [
 ```
 - forms - using liquid tags to call form in a template 
   - `{{ form.as_p }}` will wrap the form in `<p>` tags
+
+
+### 2018-01-31
+#### Models
+- in admin.py, import model and add it to the admin  
+  - `from .models import [ModelName]`
+  - `admin.site.Register([ModelName])`
+- each field in a model can be given a `verbose_name`. this will be the field name displayed in the admin (`verbose_name='[Field Label]'`)
+- in the model Meta class, you can define `verbose_name` and `verbose_name_plural`. this will control the displayed headers in the admin for the entire model
+- model field choices - how to control fields that should have a finite set of selectable choices (drop down)
+  - above the model ([or in the model itself](https://docs.djangoproject.com/en/2.0/ref/models/fields/#choices)), define the choices as and array of tuples.
+  - add `choices=` to the field arguments 
+  - first value of each tuple is what is stored in the datbase, the second is the label in the admin or form.
+- Object unicode name - needed to give the model a lable in the admin?
+  - from within the model itself:
+  ```python
+  def __str__(self):
+    return "Something"
+    # OR
+    return self.[field name] # something like title or name
+  ```
+- smart_text `from django.utils.encoding import smart_text`
+  - helps fields render correctly if other languages or encodings are used.
