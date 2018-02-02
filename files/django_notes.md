@@ -93,3 +93,13 @@ def save(self, *args, **kwargs):
   super(PostModel, self).save(*args, **kwargs)
 ```
 - slugify `from django.utils.text import slugify`
+
+- admin.py ModelAdmin used to display fields in the admin list
+```python
+from .models import Contact
+
+class ContactAdmin(admin.ModelAdmin):
+    list_display = ('name','email','timestamp')
+
+admin.site.register(Contact, ContactAdmin)
+```
