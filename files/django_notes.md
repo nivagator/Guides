@@ -48,7 +48,7 @@ urlpatterns = [
 ...
 ]
 ```
-- forms - using liquid tags to call form in a template 
+- forms - using liquid tags to call form in a template
   - `{{ form.as_p }}` will wrap the form in `<p>` tags
 
 
@@ -61,9 +61,9 @@ urlpatterns = [
 - in the model Meta class, you can define `verbose_name` and `verbose_name_plural`. this will control the displayed headers in the admin for the entire model
 - model field choices - how to control fields that should have a finite set of selectable choices (drop down)
   - above the model ([or in the model itself](https://docs.djangoproject.com/en/2.0/ref/models/fields/#choices)), define the choices as and array of tuples.
-  - add `choices=` to the field arguments 
+  - add `choices=` to the field arguments
   - first value of each tuple is what is stored in the datbase, the second is the label in the admin or form.
-- Object unicode name - needed to give the model a lable in the admin?
+- Object unicode name - needed to give the model a label in the admin?
   - from within the model itself:
   ```python
   def __str__(self):
@@ -73,3 +73,23 @@ urlpatterns = [
   ```
 - smart_text `from django.utils.encoding import smart_text`
   - helps fields render correctly if other languages or encodings are used.
+
+### 2018-02-01
+#### Models
+- overwriting the save method. special actions that can be taken when records are saved.
+```python
+# an example of the default save method.
+def save(self, *args, **kwargs):
+  super(PostModel, self).save(*args, **kwargs)
+
+# other actions can be taken on save.
+def save(self, *args, **kwargs):
+  print(self.title) #example of what can be printed
+  #a bad idea in the save method
+  self.title = "a new title" #title will always be "a new title"
+  # example of practical application
+  if not self.slug and self.title:
+      self.slug = slugify(self.title)
+  super(PostModel, self).save(*args, **kwargs)
+```
+- slugify `from django.utils.text import slugify`
