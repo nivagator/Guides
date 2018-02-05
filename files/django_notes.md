@@ -118,6 +118,7 @@ title = models.CharField(max_length=240, unique=True, error_messages={"unique":"
 
 #### Models - ModelAdmin
 - can be used to override the default admin display
+- also in the ModelAdmin: you can run functions and display them even if they are not stored in the database. see `new_content` below
 ```python
 # admin.py
 class PostModelAdmin(admin.ModelAdmin):
@@ -130,11 +131,17 @@ class PostModelAdmin(admin.ModelAdmin):
     'active',
     'updated',
     'timestamp',
+    'new_content',
   ]
   readonly_fields=[
     'updated',
     'timestamp',
+    'new_content',
   ]
+  
+  def new_content(self, obj, *args, **kwargs):
+    return str(obj.title)
+  
   class Meta:
     model = PostModel
 
