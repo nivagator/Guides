@@ -112,3 +112,31 @@ admin.site.register(Contact, ContactAdmin)
 ```python
 title = models.CharField(max_length=240, unique=True, error_messages={"unique":"this field must be unique"}, verbose_name="Post Title", help_text="Must be a unique value")
 ```
+#### Models - Timestamp and DateTimeField
+- `auto_now=True` is updated every time save is called.
+- `auto_now_add=True` is when it was added to the database. once created, it does not get updated.
+
+#### Models - ModelAdmin
+- can be used to override the default admin display
+```python
+# admin.py
+class PostModelAdmin(admin.ModelAdmin):
+  fields=[
+    'title',
+    'slug',
+    'content',
+    'publish',
+    'publish_date',
+    'active',
+    'updated',
+    'timestamp',
+  ]
+  readonly_fields=[
+    'updated',
+    'timestamp',
+  ]
+  class Meta:
+    model = PostModel
+
+admin.site.register(PostModel, PostModelAdmin)
+```
