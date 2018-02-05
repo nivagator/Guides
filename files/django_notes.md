@@ -147,3 +147,13 @@ class PostModelAdmin(admin.ModelAdmin):
 
 admin.site.register(PostModel, PostModelAdmin)
 ```
+#### Models - Instance methods and properties.
+- similar to the `new_content` above, you can create functions in the Model class and call them in to the admin.
+- by adding `@Property` just before the method definition, you can use it as a dot object. `return str(instance.age)` vs `return str(instance.age())`
+#### Model Managers
+- can alter model defaults such as the objects call. 
+- defined outside of the Model class but connected inside the model class through `objects = PostModelManager()`
+#### Model QuerySet Methods
+- can change the default queryset calls such as all()
+- you can define your own qs defaults for frequently used calls.
+- important for class based views since they use default query set calls
