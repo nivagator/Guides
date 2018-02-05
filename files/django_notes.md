@@ -103,3 +103,12 @@ class ContactAdmin(admin.ModelAdmin):
 
 admin.site.register(Contact, ContactAdmin)
 ```
+### 2018-02-05
+#### Models - Signals
+- post_save and pre_save signals are built into django. 
+- error_messages can be called as an argument of dictionary values in a model field that override the default error messages on form/model validation.
+- help_text for a field will describe conditions required for a valid field
+- verbose_name for a model field will change field label. 
+```python
+title = models.CharField(max_length=240, unique=True, error_messages={"unique":"this field must be unique"}, verbose_name="Post Title", help_text="Must be a unique value")
+```
