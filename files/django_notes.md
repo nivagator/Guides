@@ -157,3 +157,11 @@ admin.site.register(PostModel, PostModelAdmin)
 - can change the default queryset calls such as all()
 - you can define your own qs defaults for frequently used calls.
 - important for class based views since they use default query set calls
+
+- (Admin Site Header and Title)[https://matheusho.svbtle.com/change-django-admin-site-title]
+```python
+# app/urls.py
+...
+admin.site.site_header = ("HSS Site Administration")
+admin.site.site_title = _("HSS Site Admin")
+```
