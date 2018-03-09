@@ -103,3 +103,65 @@ class ContactAdmin(admin.ModelAdmin):
 
 admin.site.register(Contact, ContactAdmin)
 ```
+### 2018-02-05
+#### Models - Signals
+- post_save and pre_save signals are built into django. 
+- error_messages can be called as an argument of dictionary values in a model field that override the default error messages on form/model validation.
+- help_text for a field will describe conditions required for a valid field
+- verbose_name for a model field will change field label. 
+```python
+title = models.CharField(max_length=240, unique=True, error_messages={"unique":"this field must be unique"}, verbose_name="Post Title", help_text="Must be a unique value")
+```
+#### Models - Timestamp and DateTimeField
+- `auto_now=True` is updated every time save is called.
+- `auto_now_add=True` is when it was added to the database. once created, it does not get updated.
+
+#### Models - ModelAdmin
+- can be used to override the default admin display
+- also in the ModelAdmin: you can run functions and display them even if they are not stored in the database. see `new_content` below
+```python
+# admin.py
+class PostModelAdmin(admin.ModelAdmin):
+  fields=[
+    'title',
+    'slug',
+    'content',
+    'publish',
+    'publish_date',
+    'active',
+    'updated',
+    'timestamp',
+    'new_content',
+  ]
+  readonly_fields=[
+    'updated',
+    'timestamp',
+    'new_content',
+  ]
+  
+  def new_content(self, obj, *args, **kwargs):
+    return str(obj.title)
+  
+  class Meta:
+    model = PostModel
+
+admin.site.register(PostModel, PostModelAdmin)
+```
+#### Models - Instance methods and properties.
+- similar to the `new_content` above, you can create functions in the Model class and call them in to the admin.
+- by adding `@Property` just before the method definition, you can use it as a dot object. `return str(instance.age)` vs `return str(instance.age())`
+#### Model Managers
+- can alter model defaults such as the objects call. 
+- defined outside of the Model class but connected inside the model class through `objects = PostModelManager()`
+#### Model QuerySet Methods
+- can change the default queryset calls such as all()
+- you can define your own qs defaults for frequently used calls.
+- important for class based views since they use default query set calls
+
+- (Admin Site Header and Title)[https://matheusho.svbtle.com/change-django-admin-site-title]
+```python
+# app/urls.py
+...
+admin.site.site_header = ("HSS Site Administration")
+admin.site.site_title = _("HSS Site Admin")
+```
