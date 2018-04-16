@@ -20,6 +20,7 @@
 
 5. Make migrations
 `python manage.py makemigrations`
+`python manage.py migrate`
 
 5. Create superuser
 `python manage.py createsuperuser`
