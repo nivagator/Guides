@@ -1,10 +1,12 @@
-## How To Begin a New Django project
+# How To Begin a New Django project
 
-#### Assuptions:
+## Assuptions
+
 - Ubuntu Linux server environment (or similar)
 - virtualenv and virtualenvwrapper installed
 
-### Server-Side Setup
+## Server-Side Setup
+
 1. Create virtualenv
 `mkvirtualenv project-name`
 
@@ -15,25 +17,24 @@
 `django-admin startproject project-name`
 
 4. Update settings.py
-- add host IP address to the `ALLOWED_HOSTS`
-- add custom database solution if required
+    - add host IP address to the `ALLOWED_HOSTS`
+    - add custom database solution if required
 
 5. Make migrations
 `python manage.py makemigrations`
 `python manage.py migrate`
 
-5. Create superuser
+6. Create superuser
 `python manage.py createsuperuser`
 
-6. Verify site
+7. Verify site
 `python manage.py runserver 0:8000`
 
-7. Start new Django app
+8. Start new Django app
 `python manage.py startapp app-name`
 
+## Dev Environment Setup (VSCode)
 
-
-### Dev Environment Setup (VSCode)
 1. Create folder for project
 2. Open folder in VSCode
 3. Set up sftp.json file SFTP:Config - point to project folder on remote Server

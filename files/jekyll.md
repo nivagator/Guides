@@ -9,12 +9,15 @@
 
 #### Steps
 1. `sudo apt-get install ruby ruby-dev build-essential`
-2. ```bash
+2. 
+
+```bash
 echo '# Install Ruby Gems to ~/gems' >> ~/.bashrc
 echo 'export GEM_HOME=$HOME/gems' >> ~/.bashrc
 echo 'export PATH=$HOME/gems/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
+
 3. `gem install jekyll bundler`
 
 
